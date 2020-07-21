@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Nataliy Malinkina](https://up.htmlacademy.ru/adaptive/20/user/635459).
-* Наставник: [Анастасия Рябчикова] (https://up.htmlacademy.ru/adaptive/20/user/id521463).
+* Наставник: [Анастасия Рябчикова](https://up.htmlacademy.ru/adaptive/20/user/id521463).
 
 ---
 
