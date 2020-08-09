@@ -55,21 +55,21 @@
   </div>
       <form class="form__block" action="https://echo.htmlacademy.ru" method="post">
 
-        <fieldset class="form__user user form-top">
+        <fieldset class="form__user user">
           <div class="form__wrapper wrapper">
           <legend class="visually-hidden">ФИО</legend>
           <ul class="user__list form-input-text">
             <li class="user__item">
               <label for="surname">Фамилия:</label>
-              <input class="user__input form-input-text--surname" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
+              <input class="user__input form-input-text form-input-text--surname" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
             </li>
             <li class="user__item">
               <label for="name">Имя:</label>
-              <input class="user__input form-input-text--name" type="text" name="username" id="name" required placeholder="Введите ваше имя *">
+              <input class="user__input form-input-text form-input-text--name" type="text" name="username" id="name" required placeholder="Введите ваше имя *">
             </li>
             <li class="user__item">
               <label for="patronymic">Отчество:</label>
-              <input class="user__input form-input-text--patronymic" type="text" name="surname" id="patronymic" required placeholder="Ну и отчество тоже">
+              <input class="user__input form-input-text form-input-text--patronymic" type="text" name="surname" id="patronymic" required placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </div>
@@ -78,29 +78,35 @@
         <fieldset class="form__progress progress">
           <div class="form__wrapper wrapper">
           <legend class="progress__text">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="progress__list form-input-text">
+          <ul class="progress__list">
             <li class="progress__item">
-              <input class="progress__input form-input-text--selfie" type="checkbox" name="selfie" id="selfie">
-              <label for="selfie">Сделал селфи с акулой</label>
+              <span class="progress__input-on"></span>
+              <input class="progress__input form-input-checkbox form-input-checkbox--selfie visually-hidden" type="checkbox" name="selfie" id="selfie">
+            <label for="selfie">Сделал селфи с акулой</label>
             </li>
             <li class="progress__item">
-              <input class="progress__input form-input-text--beach" type="checkbox" name="sun" id="beach">
+              <span class="progress__input-on"></span>
+              <input class="progress__input form-input-checkbox form-input-checkbox--beach visually-hidden" type="checkbox" name="sun" id="beach">
               <label for="beach">Обгорел на пляже</label>
             </li>
             <li class="progress__item">
-              <input class="progress__input form-input-text--chuck" type="checkbox" name="chuck" id="chuck">
+              <span class="progress__input-on"></span>
+              <input class="progress__input form-input-checkbox form-input-checkbox--chuck visually-hidden" type="checkbox" name="chuck" id="chuck">
               <label for="chuck">Видел Чака Норриса</label>
             </li>
             <li class="progress__item">
-              <input class="progress__input form-input-text--souvenir" type="checkbox" name="souvenirs" id="souvenir">
+              <span class="progress__input-on"></span>
+              <input class="progress__input form-input-checkbox form-input-checkbox--souvenir visually-hidden" type="checkbox" name="souvenirs" id="souvenir">
               <label for="souvenir">Накупил сувениров</label>
             </li>
             <li class="progress__item">
-              <input class="progress__input form-input-text--tower" type="checkbox" name="tower" id="tower">
+              <span class="progress__input-on"></span>
+              <input class="progress__input form-input-checkbox form-input-checkbox--tower visually-hidden" type="checkbox" name="tower" id="tower">
               <label for="tower">Удержал башню</label>
             </li>
             <li class="progress__item">
-              <input class="progress__input form-input-text--hotel" type="checkbox" name="hotel" id="hotel">
+              <span class="progress__input-on"></span>
+              <input class="progress__input form-input-checkbox form-input-checkbox--hotel visually-hidden" type="checkbox" name="hotel" id="hotel">
               <label for="hotel">Разгромил отель</label>
             </li>
           </ul>
@@ -110,33 +116,33 @@
         <fieldset class="form__contacts contacts">
           <div class="form__wrapper wrapper">
           <legend class="form__contacts-text">Контактная информация</legend>
-          <ul class="contacts__list form-input-text">
+          <ul class="contacts__list">
             <li class="contacts__item">
               <label for="phone-number">Номер телефона</label>
-              <input class="contacts__input form-input-text--phone-number" type="text" name="phone" id="phone-number" placeholder="Номер, пожалуйста">
+              <input class="contacts__input form-input-text form-input-text--phone-number" type="text" name="phone" id="phone-number" placeholder="Номер, пожалуйста">
             </li>
             <li class="contacts__item">
               <label for="e-mail">Адрес почты</label>
-              <input class="contacts__input form-input-text--e-mail" type="text" name="mail" id="e-mail" placeholder="Введите почту *">
+              <input class="contacts__input form-input-text form-input-text--e-mail" type="text" name="mail" id="e-mail" placeholder="Введите почту *">
             </li>
           </ul>
         </div>
         </fieldset>
 
-        <fieldset class="form__app app form-top">
+        <fieldset class="form__app app">
           <div class="form__wrapper wrapper">
           <legend class="app__text">С каким приложением путешествовали?</legend>
-          <ul class="app__list form-input-text">
+          <ul class="app__list">
             <li class="app__item">
-              <input class="app__input form-input-text--ios" type="radio" name="pink" id="ios" checked>
+              <input class="app__input form-input-radio form-input-radio--ios visually-hidden" type="radio" name="pink" id="ios" checked>
               <label for="ios">Pink для iOS</label>
             </li>
             <li class="app__item">
-              <input class="app__input form-input-text--android" type="radio" name="pink" id="android">
-              <label for="android">Pink для Android</label>
+              <input class="app__input form-input-radio form-input-radio--android visually-hidden" type="radio" name="pink" id="android">
+              <label for="android">Pink на Android</label>
             </li>
             <li class="app__item">
-              <input class="app__input form-input-text--windows" type="radio" name="pink" id="windows">
+              <input class="app__input form-input-radio form-input-radio--windows visually-hidden" type="radio" name="pink" id="windows">
               <label for="windows">Windows Phone</label>
             </li>
           </ul>
@@ -144,9 +150,10 @@
         </fieldset>
 
         <fieldset class="form__emotions emotions">
+          <div class="form__wrapper wrapper">
           <legend>Опишите свои эмоции</legend>
-          <label for="text"></label>
-          <textarea class="emotions__textarea" name="text" rows="8" cols="80" id="text">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="form-input-text" name="text" rows="8" cols="80" id="text">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </div>
         </fieldset>
 
         <div class="form__submit submit">
