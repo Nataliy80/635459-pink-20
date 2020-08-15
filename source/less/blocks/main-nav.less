@@ -1,5 +1,20 @@
+.main-nav__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  outline: 1px solid green;
+}
+
 .main-nav__logo {
   display: block;
   padding-top: 22px;
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__head {
+    min-width: 620px;
+  }
 }

@@ -1,7 +1,8 @@
 .site-list {
-  min-height: 258px;
+  height: 258px;
   margin: 0;
   padding-left: 0;
+  outline: 3px solid red;
 }
 
 .site-list a {
@@ -18,7 +19,21 @@
 
 .site-list__item {
   height: 63px;
-  border-top: 1px solid #1d2631;
-  border-bottom: 1px solid #1d2631;
+  background: #283645;
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
   text-align: center;
+}
+
+@media (min-width: @desctop-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 110px;
+  }
+
+  .site-list a {
+    border: none;
+  }
+
 }

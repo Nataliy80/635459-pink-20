@@ -18,7 +18,7 @@
 }
 
 .user__list label {
-  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .user__item {
@@ -47,6 +47,49 @@
 
     &:active {
       border-color: #d22856;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+  .user {
+    width: 640px;
+    padding: 0;
+    order: 1;
+    }
+
+  .user__list {
+    width: 100%;
+    margin: 0;
+  }
+
+  .user__item {
+    display: flex;
+    align-items: center;
+    width: 620px;
+  }
+
+  .user__input {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: @desctop-width) {
+  .user {
+    width: 445px;
+    height: 300px;
+  }
+
+  .user__list {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .user__input {
+    width: 100%;
   }
 
 }
