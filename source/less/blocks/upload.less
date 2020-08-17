@@ -19,9 +19,20 @@
 .upload__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   height: 160px;
+  padding-left: 0;
   padding-top: 40px;
+}
+
+.upload__item {
+  opacity: 0.3;
+}
+
+.upload__item--active:active {
+  color: #d22856;
 }
 
 .upload__button-on {

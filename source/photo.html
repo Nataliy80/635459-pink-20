@@ -56,7 +56,7 @@
     <div class="photo-item photo__item photo__item--panorama">
       <div class="photo__author-picture">
         <span class="photo__today">Панорама дня</span>
-        <img class="photo__author-image" src="img/panorama-mobile@1x.jpg" width="320" height="138" alt="Фотография моста">
+        <img class="photo__author-image photo__author-image--panorama " src="img/panorama-mobile@1x.jpg" width="320" height="138" alt="Фотография моста">
       </div>
       <div class="photo__item-info">
         <cite class="photo__author-name">Анна</cite>
@@ -149,13 +149,13 @@
       <div class="upload__tool">
         <ul class="upload__list">
           <li class="upload__item">
-            <img class="upload__image" src="#" alt="Обрезка фото">
+            <button class="upload__item__button load__item__button--crop" type="button"></button>
           </li>
           <li class="upload__item">
-            <img class="upload__image" src="#" alt="Заливка">
+            <button class="upload__item__button upload__item__button--fill" type="button"></button>
           </li>
           <li class="upload__item">
-            <img class="upload__image" src="#" alt="Контрастность">
+            <button class="upload__item__button upload__item__button--contrast" type="button"></button>
           </li>
         </ul>
         <button class="upload__button-on" type="button">Запостить</button>

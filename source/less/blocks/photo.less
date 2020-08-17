@@ -59,7 +59,33 @@
 
 .photo__author-picture {
   width: 100%;
+  height: 138px;
   margin: 0;
+}
+
+.photo__today {
+  display: none;
+}
+
+.photo__item--panorama {
+  position: relative;
+}
+
+.photo__item--panorama::before {
+  position: absolute;
+  content: "Панорама дня";
+  top: 0;
+  right: 30px;
+  width: 140px;
+  padding-top: 6px;
+  height: 36px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #d22856;
 }
 
 .photo__like {
@@ -68,7 +94,7 @@
   font-size: 12px;
   line-height: 2;
   text-transform: uppercase;
-  color: #D22856;
+  color: #d22856;
 }
 
 
@@ -86,6 +112,10 @@
   .photo__item--panorama {
     width: 100%;
   }
+
+.photo__author-image--panorama {
+  width: 100%;
+}
 
   .photo__item--panorama .photo__item-info {
     width: 640px;
