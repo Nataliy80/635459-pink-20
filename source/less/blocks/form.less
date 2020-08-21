@@ -1,5 +1,4 @@
 .form fieldset {
-  margin: 0;
   padding: 0;
 }
 
@@ -7,13 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
-}
-
-.form__wrapper {
-  height: 100%;
+  margin-top: 55px;
 }
 
 .form__contest {
@@ -52,6 +47,7 @@
 
 .form__contacts {
   height: 287px;
+  width: 100%;
   border: none;
   font-size: 14px;
   color: #d22856;
@@ -76,6 +72,7 @@
 
 .contacts__list label {
   padding-left: 30px;
+  padding-bottom: 17px;
 }
 
 .contacts__item {
@@ -101,6 +98,7 @@
 }
 
 .app__text {
+  margin-top: 42px;
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
@@ -173,7 +171,7 @@
   border-color: #d22856;
 }
 
-.form__emotions {
+.emotions {
   display: flex;
   width: 276px;
   margin-top: 42px;
@@ -181,7 +179,7 @@
   outline: 1px solid red;
 }
 
-.form__emotions legend {
+.emotions legend {
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
@@ -296,8 +294,8 @@
     order: 5;
   }
 
-  .emotions__textarea {
-    width: 500px;
+  .emotions textarea {
+    width: 100%;
   }
 
   .form__submit {
@@ -343,15 +341,17 @@
   .form__app {
     width: 430px;
     height: 300px;
+    margin-top: 70px;
   }
 
   .form__emotions  {
     width: 940px;
     height: 215px;
+    margin-top: 70px;
   }
 
-  .emotions__textarea {
-    width: 820px;
+  .emotions textarea {
+    width: 100%;
   }
 
   .contacts__list {
