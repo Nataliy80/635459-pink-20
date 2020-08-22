@@ -43,6 +43,72 @@
 
 }
 
+.price__item-hit {
+  position: relative;
+}
+
+.price__hit {
+  position: absolute;
+  content: "";
+  background-image: url(../img/bg-hit.svg);
+  background-repeat: no-repeat;
+  left: 6px;
+  top: 6px;
+  transform: rotate(-45deg);
+}
+
 .price__toggle {
   text-align: center;
+}
+
+
+@media (min-width: @tablet-width) {
+  .price {
+    min-width: 620px;
+    height: 100%;
+  }
+
+  .price__list {
+    width: 620px;
+    height: 223px;
+    margin-top: 100px;
+  }
+
+  .price__item {
+    width: 155px;
+    height: 47px;
+  }
+
+  .price__item-top {
+    width: 155px;
+    height: 80px;
+  }
+
+  .price__toggle {
+    display: none;
+  }
+
+}
+
+@media (min-width: @desctop-width) {
+  .price {
+    height: 525px;
+    max-width: 1200px;
+  }
+
+  .price__list {
+    width: 945px;
+    height: 282px;
+    margin-top: 150px;
+  }
+
+  .price__item {
+    width: 237px;
+    height: 60px;
+  }
+
+  .price__item-top {
+    height: 100px;
+  }
+
 }
