@@ -12,8 +12,11 @@
 }
 
 .main-nav__logo {
-  display: block;
-  padding-top: 22px;
+  display: flex;
+  flex-grow: 1;
+  margin-top: 23px;
+  width: 74px;
+  height: 23px;
   cursor: pointer;
 }
 
@@ -25,8 +28,20 @@
 }
 
 @media (min-width: @desctop-width) {
-  .main-nav__head {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
+  .main-nav__logo {
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
+  .main-nav__head {
+    width: 95px;
+    margin: 0;
   }
 
   .main-nav__toggle {

@@ -12,7 +12,6 @@
 <body>
   <header class="page-header">
     <nav class="main-nav main-nav--closed">
-      <div class="main-nav__wrapper wrapper">
         <div class="main-nav__head">
           <a class="main-nav__logo">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859"
@@ -29,7 +28,7 @@
             </svg>
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
+      </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
@@ -44,18 +43,15 @@
             <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
 
   <main class="page-main">
     <section class="download">
       <div class="download__title">
-        <div class="download__wrapper wrapper">
-          <h1 class="download__slogan">Взгляните на жизнь иначе!</h1>
+          <h1 class="download__slogan">Взгляните на жизнь<br>иначе!</h1>
         </div>
-      </div>
-      <div class="download-background download__wrapper wrapper">
+      <div class="download-background">
         <button class="download__button" type="button">Скачать приложение</button>
         <ul class="download__list">
           <li class="download__item">
@@ -69,17 +65,17 @@
           </li>
         </ul>
         <p class="download__description">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
-      </div>
+    </div>
     </section>
 
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="advantages__box-top">
-        <div class="advantages__wrapper wrapper">
-          <p class="advantages__caption">
+        <div class="advantages__caption advantages__wrapper wrapper">
+          <p>
             <span class="advantages__text">Устали от серости мегаполиса?</span>
           </p>
-          <p class="advantages__caption">
+          <p>
             <span class="advantages__text">Нам есть, что вам<br>предложить!</span>
           </p>
         </div>
@@ -103,16 +99,14 @@
         </div>
       </div>
       <div class="advantages__time">
-        <div class="advantages__wrapper wrapper">
           <div class="advantages__image">
             <span class="advantages__time-24">24</span>
           </div>
-          <div class="advantages__time-text">
-            <h3 class="advantages__time-title">"Эффект на 24 часа!"</h3>
+            <div class="advantages__time-text">
+            <h3 class="advantages__time-title">Эффект на 24 часа!</h3>
             <p class="advantages__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="advantages__time-link" href="#">Узнать больше об исследовании</a>
           </div>
-        </div>
       </div>
     </section>
 
@@ -127,9 +121,9 @@
           </blockquote>
         </div>
         <div class="reviews__toggle slider-toggle">
-          <button class="slider__toggle--active" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
+          <button class="slider-toggle__item slider-toggle__item--active" type="button"></button>
+          <button class="slider-toggle__item" type="button"></button>
+          <button class="slider-toggle__item" type="button"></button>
         </div>
       </div>
     </section>
@@ -163,9 +157,9 @@
         </tr>
       </table>
       <p class="price__toggle slider-toggle">
-        <button class="slider__toggle" type="button"></button>
-        <button class="slider__toggle--active" type="button"></button>
-        <button class="slider__toggle" type="button"></button>
+        <button class="slider-toggle__item" type="button"></button>
+        <button class="slider-toggle__item slider-toggle__item--active" type="button"></button>
+        <button class="slider-toggle__item" type="button"></button>
       </p>
     </section>
 

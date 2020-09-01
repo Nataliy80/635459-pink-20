@@ -12,7 +12,6 @@
 <body>
   <header class="page-header">
     <nav class="main-nav main-nav--closed">
-      <div class="main-nav__wrapper wrapper">
         <div class="main-nav__head">
           <a class="main-nav__logo">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859"
@@ -29,38 +28,39 @@
             </svg>
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
+      </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Конкурс</a>
+          <li class="site-list__item site-list__item--active">
+            <a>Конкурс</a>
           </li>
           <li class="site-list__item">
             <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
 
   <main class="form">
     <div class="form__contest baner baner--form-page">
+      <div class="form__inner-title">
       <h1 class="form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </div>
     <div class="form__wrapper wrapper">
       <div class="caption caption--form-page">
         <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        <p class="form__text form__text--none">Пожалуйста,заполните форму ниже:</p>
       </div>
     </div>
     <form class="form__block" action="https://echo.htmlacademy.ru" method="post">
 
-      <fieldset class="form__user user">
-        <div class="form__wrapper wrapper">
+      <fieldset class="form__user user form-desctop">
           <legend class="visually-hidden">ФИО</legend>
           <ul class="user__list form-input-text">
             <li class="user__item">
@@ -76,7 +76,6 @@
               <input class="user__input form-input-text form-input-text--patronymic" type="text" name="surname" id="patronymic" required placeholder="Ну и отчество тоже">
             </li>
           </ul>
-        </div>
       </fieldset>
 
       <fieldset class="form__progress progress">
@@ -130,7 +129,7 @@
       </fieldset>
 
       <fieldset class="form__contacts contacts">
-        <div class="form__wrapper wrapper">
+          <div class="form__wrapper wrapper">
           <legend class="form__contacts-text">Контактная информация</legend>
           <ul class="contacts__list">
             <li class="contacts__item">
@@ -145,8 +144,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__app app">
-        <div class="form__wrapper wrapper">
+      <fieldset class="form__app app form-desctop">
           <legend class="app__text">С каким приложением путешествовали?</legend>
           <ul class="app__list">
             <li class="app__item">
@@ -171,12 +169,11 @@
               </label>
             </li>
           </ul>
-        </div>
       </fieldset>
 
       <fieldset class="form__emotions emotions">
-          <legend>Опишите свои эмоции</legend>
-          <textarea class="form-input-text" name="text" rows="8" cols="80" id="text">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <legend class="emotions__text">Опишите свои эмоции</legend>
+          <textarea class="form-input-textarea" name="text" rows="8" cols="80" id="text">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
 
       <div class="form__submit submit">

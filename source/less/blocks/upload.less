@@ -30,10 +30,11 @@
   opacity: 0.3;
 }
 
-.upload__button-on {
+.upload__button--on {
   width: 100%;
   height: 55px;
   margin-top: 28px;
+  padding: 0;
   border: 3px solid #d22856;
   font-style: normal;
   font-size: 18px;
@@ -47,10 +48,11 @@
   cursor: pointer;
 }
 
-.upload__button-off {
+.upload__button--off {
   width: 100%;
   height: 55px;
   margin-top: 28px;
+  padding: 0;
   opacity: 0.1;
   border: 3px solid #283645;
   font-style: normal;
@@ -61,7 +63,6 @@
   text-align: center;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  color: #283645;
   cursor: pointer;
 }
 
@@ -73,9 +74,16 @@
     height: 510px;
   }
 
+  .upload__text {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+
   .upload__list {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .upload__photo {
@@ -83,12 +91,35 @@
     height: 400px;
     padding-top: 58px;
   }
+
+  .upload__button--on {
+    min-width: 260px;
+  }
+
+  .upload__button--off {
+  min-width: 260px;
+  }
+
 }
 
 @media (min-width: @desctop-width) {
   .upload__list {
+    width: 100%;
     height: 300px;
     margin: 0;
     padding: 0;
   }
+
+  .upload-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .upload__button--off {
+    margin-left: 44px;
+  }
+
+
 }

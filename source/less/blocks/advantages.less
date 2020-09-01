@@ -1,14 +1,13 @@
 .advantages__box-top {
-  height: 250px;
   background-color: #ffffff;
 }
 
 .advantages__box-bottom {
-  height: 730px;
   background-image: url(../img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: center 110%;
   background-color: #f2f2f2;
+  min-height: 730px;
 }
 
 .advantages__list {
@@ -21,14 +20,19 @@
 }
 
 .advantages__caption {
-  margin: 0;
-  padding-top: 35px;
+  padding-top: 46px;
+  padding-bottom: 46px;
   font-style: normal;
   font-size: 24px;
   font-weight: 300;
   line-height: 1;
   color: #283645;
   text-align: center;
+}
+
+.advantages__caption p {
+  margin: 0;
+  padding: 10px;
 }
 
 .advantages__title {
@@ -44,6 +48,7 @@
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
+  overflow: hidden;
 }
 
 .advantages__time {
@@ -51,8 +56,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantages__wrapper {
-    padding: 0;
+  .advantages__time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 35px;
+    text-align: left;
   }
 
   .advantages__text {
@@ -65,11 +75,9 @@
   .advantages__box-bottom {
     display: flex;
     flex-direction: row;
-    height: 490px;
     background-image: url(../img/iphone-screen-3-tablet@1x.png);
     background-repeat: no-repeat;
-    background-position: 20px;
-    background-color: #f2f2f2;
+    background-position: 20px 85px;
   }
 
   .advantages__list {
@@ -81,27 +89,41 @@
   }
 
   .advantages__description {
-    text-align: left;
-  }
-
-  .advantages__time {
-    display: flex;
-    flex-direction: row;
-    width: 320px;
-    margin-left: 300px;
-    padding-top: 35px;
+    font-size: 14px;
+    line-height: 2;
     text-align: left;
   }
 
   .advantages__image {
-    width: 280px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    min-height: 276px;
+    margin: 0;
+    background-image: url(../img/icon-editor-diagram-fill.svg), url(../img/icon-timer.svg);
+    background-repeat: no-repeat;
+    background-position: center 74px, center 18px;
+    background-size: 202px 202px, 238px 276px;
+    text-align: center;
+    outline: 1px solid red;
+  }
+
+  .advantages__time-24 {
+    font-size: 96px;
+    line-height: 1.8;
+    color: #d22856;
+    padding: 75px;
+  }
+
+  .advantages__time-text {
+    padding: 10px;
     outline: 1px solid red;
   }
 
   .advantages__time-title {
     font-weight: bold;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 1;
   }
 
   .advantages__time-link {
@@ -112,22 +134,69 @@
 
 @media (min-width: @desctop-width) {
   .advantages__box-bottom {
-    width: 920px;
-    height: 625px;
-    margin: 0;
-    background-image: url(../img/iphone-screen-1-desktop@1x.png);
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-image: url(../img/iphone-screen-3-desktop@1x.png), url(../img/iphone-screen-1-desktop@1x.png), url(../img/iphone-screen-2-desktop@1x.png);
     background-repeat: no-repeat;
-    background-position: top 110%;
-    background-color: #f2f2f2;
+    background-position: 650px 10px, 35px 10px, 335px 10px;
   }
+
+  .advantages__image {
+    flex-grow: 1;
+    min-height: 345px;
+    background-position: center 74px, center 5px;
+    background-size: 252px 252px, 298px 345px;
+  }
+
+  .advantages__time-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+  }
+
   .advantages__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     width: 100%;
     margin: 0;
+    margin-top: 350px;
     padding: 0;
+  }
+
+  .advantages__time {
+    background-color: #f2f2f2;
+  }
+
+  .advantages__time-24 {
+    font-size: 120px;
+    line-height: 1.2;
+    padding: 120px;
+  }
+
+  .advantages__title {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .advantages__description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .advantages__time-link {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.6;
   }
 
 }
