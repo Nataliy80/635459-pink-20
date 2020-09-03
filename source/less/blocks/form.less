@@ -235,6 +235,10 @@
   line-height: 30px;
 }
 
+.form-group {
+  width: 100%;
+}
+
 .popup-failure {
   display: none;
 }
@@ -280,6 +284,10 @@
   .form__contacts-text {
     display: block;
     text-align: center;
+  }
+
+  .form-group {
+    width: 100%;
   }
 
   .contacts__list {
@@ -359,10 +367,11 @@
     margin: 0 auto;
   }
 
-  .form-desctop {
+  .form-group {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 50%;
   }
 
   .form__contacts {
@@ -373,7 +382,7 @@
 
   .form__app {
     flex-grow: 2;
-    width: 430px;
+    width: 50%;
     height: 300px;
     margin: 0;
   }
