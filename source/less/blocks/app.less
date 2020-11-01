@@ -1,0 +1,93 @@
+.app {
+  width: 100%;
+  padding: 0;
+  min-height: 340px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.app__text {
+  display: block;
+  padding: 0;
+  padding-top: 42px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.app-radio {
+  font-size: 18px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+.app__list {
+  .list-reset();
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.app__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  padding-top: 30px;
+}
+
+.app-radio__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.app-radio__on {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-radio__input:checked + .app-radio__on {
+  background-image: url(../img/ellipse-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.app-radio__input:hover + .app-radio__on {
+  border-color: #283645;
+}
+
+.app-radio__input:active + .app-radio__on {
+  border-color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .app {
+    min-width: 616px;
+    min-height: 300px;
+    margin-top: 70px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    order: 2;
+  }
+
+  .app__text {
+    margin: 0;
+    padding: 0;
+  }
+
+}
